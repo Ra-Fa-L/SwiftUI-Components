@@ -18,6 +18,20 @@ struct LabelView: View {
                 icon: { Rectangle().frame(width: 10, height: 10) }
             )
             .font(.system(size: 40))
+
+            Label {
+                Text("Name Surname")
+                    .font(.body)
+                    .foregroundColor(.primary)
+                Text("Title")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            } icon: {
+                Circle()
+                    .fill(Color.red)
+                    .frame(width: 44, height: 44, alignment: .center)
+                    .overlay(Text("A.J."))
+            }
         }
     }
 }

@@ -11,6 +11,7 @@ struct PageTabViewStyleView: View {
     private let colors = [Color.red, .green, .blue]
     
     var body: some View {
+        #if !os(macOS)
         TabView {
             ForEach(0 ..< 3) { index in
                 Text("TabView \(index)")
@@ -19,7 +20,17 @@ struct PageTabViewStyleView: View {
                     .background(colors[index])
             }
         }
-        .tabViewStyle(PageTabViewStyle())
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+        #else
+        TabView {
+            ForEach(0 ..< 3) { index in
+                Text("TabView \(index)")
+                    .font(.title)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(colors[index])
+            }
+        }
+        #endif
     }
 }
 

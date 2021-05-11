@@ -9,22 +9,27 @@ import SwiftUI
 
 struct SFSymbolsView: View {
     var body: some View {
-        List {
-            Image(systemName: "location.fill")
-                .imageScale(.large)
-            Text("\(Image(systemName: "location")) Location")
-            Label("Title", systemImage: "shield.fill")
-            
-            HStack {
-                Image(systemName: "folder.badge.plus")
-                    .renderingMode(.template)
-                Image(systemName: "folder.badge.plus")
-                    .renderingMode(.template)
-                    .foregroundColor(Color.blue)
-                Image(systemName: "folder.badge.plus")
-                    .renderingMode(.original)
+        VStack {
+            List {
+                Image(systemName: "location.fill")
+                    .imageScale(.large)
+                Text("\(Image(systemName: "location")) Location")
+                Label("Title", systemImage: "shield.fill")
+
+                HStack {
+                    Image(systemName: "folder.badge.plus")
+                        .renderingMode(.template)
+                    Image(systemName: "folder.badge.plus")
+                        .renderingMode(.template)
+                        .foregroundColor(Color.blue)
+
+                    // Colored version
+                    Image(systemName: "folder.badge.plus")
+                        .renderingMode(.original)
+                }
+                .font(.system(size: 40))
             }
-            .font(.system(size: 40))
+            .frame(height: 200)
         }
     }
 }

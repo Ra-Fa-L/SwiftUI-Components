@@ -12,12 +12,14 @@ struct AppStoreOverlayView: View {
     @State private var showRecommended = false
 
         var body: some View {
+            #if os(iOS)
             Button("Show Recommended App") {
                 showRecommended.toggle()
             }
             .appStoreOverlay(isPresented: $showRecommended) {
-                SKOverlay.AppConfiguration(appIdentifier: "1440611372", position: .bottom)
+                SKOverlay.AppConfiguration(appIdentifier: "1464144628", position: .bottom)
             }
+            #endif
         }
 }
 

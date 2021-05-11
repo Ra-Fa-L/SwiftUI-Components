@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProgressViewView: View {
     var body: some View {
+        VStack {
         ProgressView(value: 0.2) {
             Image(systemName: "checkmark.square.fill")
                 .renderingMode(.template)
@@ -18,8 +19,13 @@ struct ProgressViewView: View {
         }
         .shadow(color: Color(red: 0, green: 0, blue: 0.6),
                 radius: 4.0, x: 1.0, y: 2.0)
-        .frame(width: 200, height: 200)
         .progressViewStyle(CircularProgressViewStyle(tint: .green))
+
+            ProgressView("Progress", value: 0.4)
+                .foregroundColor(.white)
+
+            ProgressView()
+        }
         
     }
 }

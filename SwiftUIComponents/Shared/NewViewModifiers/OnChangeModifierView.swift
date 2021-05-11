@@ -9,11 +9,12 @@ import SwiftUI
 
 struct OnChangeModifierView: View {
     @State private var text = "Enter Your Text"
+    @State private var text2 = "Enter Your Text"
     
     var body: some View {
         VStack {
             Spacer()
-            
+
             TextEditor(text: $text)
                 .frame(width: 200, height: 120, alignment: .center)
                 .padding()
@@ -30,7 +31,7 @@ struct OnChangeModifierView: View {
     }
     
     private func hideKeyboard() {
-        UIApplication.shared.hideKeyboard()
+        Helper.shared.hideKeyboard()
     }
 }
 

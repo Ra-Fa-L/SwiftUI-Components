@@ -18,13 +18,39 @@ struct ProgressViewView: View {
                 .padding(.vertical, 30)
             
             ProgressView("Progress Bar", value: progress, total: 100.0)
+
+
+            ProgressView("Progress Bar", value: progress, total: 100.0)
+                .progressViewStyle(CircularProgressViewStyle())
+
+            VStack {
+                ProgressView(value: 0.25)
+                ProgressView(value: 0.75)
+            }
+            .progressViewStyle(DarkBlueShadowProgressViewStyle())
+
+
+                VStack {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                }
+                .padding()
+                .navTitle("ProgressSpinner")
         }
         .padding()
-        .navigationBarTitle("ProgressView")
+        .navTitle("ProgressView")
     }
     
     private func increaseProgress() {
         progress += (10.0)
+    }
+}
+
+struct DarkBlueShadowProgressViewStyle: ProgressViewStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        ProgressView(configuration)
+            .shadow(color: Color(red: 0, green: 0, blue: 0.6),
+                    radius: 4.0, x: 1.0, y: 2.0)
     }
 }
 

@@ -15,6 +15,8 @@ struct RedactedModifierView: View {
                 Text("123241234123214")
                     .redacted(reason: .placeholder)
             }
+            Image("music-album")
+                .redacted(reason: .placeholder)
         }
     }
 }

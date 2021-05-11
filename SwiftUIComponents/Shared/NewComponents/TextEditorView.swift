@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import UIKit
 
 struct TextEditorView: View {
     // Text stored in a @State / @Binding
@@ -26,12 +25,12 @@ struct TextEditorView: View {
         .onTapGesture {
             self.hideKeyboard()
         }
-        .navigationBarTitle("TextEditor")
+        .navTitle("TextEditor")
     }
     
     // No easy way to dismiss TextEditor
     private func hideKeyboard() {
-        UIApplication.shared.hideKeyboard()
+        Helper.shared.hideKeyboard()
     }
 }
 
