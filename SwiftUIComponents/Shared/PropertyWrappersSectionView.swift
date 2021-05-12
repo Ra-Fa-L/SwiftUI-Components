@@ -11,6 +11,7 @@ struct PropertyWrappersSectionView: View {
     var body: some View {
         Section(header: Text("Property Wrappers")) {
             NavigationLink(destination: ScaledMetricView()) { Text("@Scaled Metric") }
+            NavigationLink(destination: HintModifierView()) { Text(".help") }
         }
     }
 }

@@ -6,19 +6,22 @@
 //
 
 import SwiftUI
+import ClockKit
 
 struct GaugeView: View {
     var body: some View {
-        Gauge(value: 16.0, in: 10...88) {
-            
-        } currentValueLabel: {
-            Text("16")
-        } minimumValueLabel: {
-            Text("3")
-        } maximumValueLabel: {
-            Text("66")
+        Group {
+            Gauge(value: 9.0, in: 3...12) {
+
+            } currentValueLabel: {
+                Text("9")
+            } minimumValueLabel: {
+                Text("3")
+            } maximumValueLabel: {
+                Text("12")
+            }
+            .gaugeStyle(CircularGaugeStyle())
         }
-        .gaugeStyle(CircularGaugeStyle())
     }
 }
 

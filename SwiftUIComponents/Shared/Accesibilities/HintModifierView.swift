@@ -8,10 +8,24 @@
 import SwiftUI
 
 struct HintModifierView: View {
+    @State var isOn = false
+    @State var sliderValue = 3.0
+
     var body: some View {
         VStack {
             Text("Dummy Text")
                 .help("Record new progress entry")
+            Image(systemName: "applelogo")
+                .help("Jabłko")
+
+            Toggle("Hallo", isOn: $isOn)
+                .padding()
+                .help("Toggle")
+            
+            Button(action: {}, label: { Text("➡️✉️") })
+
+            Button(action: {}, label: { Text("➡️✉️") })
+                        .accessibility(label: Text("Send"))
         }
         .toolbar {
             ToolbarItem(placement: .primaryAction) {

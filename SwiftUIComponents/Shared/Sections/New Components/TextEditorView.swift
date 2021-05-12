@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct TextEditorView: View {
-    // Text stored in a @State / @Binding
-    @State private var text: String = "Enter text"
+    @State private var text: String = "Enter text ..."
     
     var body: some View {
         VStack {
             Spacer()
             
             TextEditor(text: $text)
-                .frame(width: 200, height: 120, alignment: .center)
-                .padding()
-                .border(Color.red)
+                .font(.system(size: 20, weight: .semibold, design: .monospaced))
+                .background(Color.gray) // Won't work
+                .colorMultiply(Color.gray)
+                .frame(height: 100)
+                .padding(12)
+                .border(Color.black)
+                .background(Color.gray)
+                .padding(.horizontal, 40)
             
             Spacer()
         }

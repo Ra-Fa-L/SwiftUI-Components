@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NewViewsSectionView: View {
     var body: some View {
-        Section(header: Text("New Views")) {
+//        Section(header: Text("New Views")) {
             NavigationLink(destination: TextEditorView()) { Text("TextEditor") }
             NavigationLink(destination: ProgressViewView()) { Text("ProgressView") }
             NavigationLink(destination: MapView()) { Text("Map") }
@@ -23,7 +23,7 @@ struct NewViewsSectionView: View {
             // SceneKit
             // Widget
 //                    NavigationLink(destination: DisclosureGroupView()) { Text("DisclosureGroup") }
-        }
+//        }
     }
 }
 

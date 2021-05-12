@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListView: View {
-    @Binding var listStyleSelection: Int
+    @State var listStyleSelection: Int = 0
 
     var body: some View {
         VStack(spacing: 0) {
@@ -71,6 +71,6 @@ struct DummyListItems: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView(listStyleSelection: .constant(0))
+        ListView()
     }
 }

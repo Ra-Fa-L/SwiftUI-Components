@@ -11,21 +11,17 @@ struct NewComponentsListView: View {
     @State var listStyleSelection: Int = 0
 
     var body: some View {
-        NavigationView {
             List {
                 NewViewsSectionView()
                 NewModifiersSectionView()
-                UpdatedViewsSectionView(listStyleSelection: $listStyleSelection)
+                UpdatedViewsSectionView()
                 PropertyWrappersSectionView()
             }
-            .listItemTint(.red)
             .navTitle("Swift UI 2.02 Components")
 //            .listStyle(PlainListStyle())
 //            .listStyle(GroupedListStyle())
 //            .listStyle(InsetGroupedListStyle())
             .listStyle(SidebarListStyle())
-        }
-        .navigationTitle("Swift UI 2.0 Components")
     }
 
     init() {
