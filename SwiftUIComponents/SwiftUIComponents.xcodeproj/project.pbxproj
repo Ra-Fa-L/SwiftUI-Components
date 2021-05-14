@@ -48,9 +48,6 @@
 		01A6B745264CA4D700934530 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01A6B744264CA4D700934530 /* testVideo.mp4 */; };
 		01A6B746264CA4D700934530 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01A6B744264CA4D700934530 /* testVideo.mp4 */; };
 		01A6B747264CA4D700934530 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01A6B744264CA4D700934530 /* testVideo.mp4 */; };
-		01A6B74F264CA71C00934530 /* testVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01A6B74E264CA71C00934530 /* testVideo2.mp4 */; };
-		01A6B750264CA71C00934530 /* testVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01A6B74E264CA71C00934530 /* testVideo2.mp4 */; };
-		01A6B751264CA71C00934530 /* testVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01A6B74E264CA71C00934530 /* testVideo2.mp4 */; };
 		01A6B754264CAB2D00934530 /* UpdatedComponentsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6B753264CAB2D00934530 /* UpdatedComponentsSection.swift */; };
 		01A6B755264CAB2D00934530 /* UpdatedComponentsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6B753264CAB2D00934530 /* UpdatedComponentsSection.swift */; };
 		01A6B756264CAB2D00934530 /* UpdatedComponentsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6B753264CAB2D00934530 /* UpdatedComponentsSection.swift */; };
@@ -82,6 +79,9 @@
 		75024B95264A96830042FC11 /* SignInWithAppleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B12BD526488CFE004A6A1A /* SignInWithAppleButtonView.swift */; };
 		75024B96264A9C490042FC11 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0178C58D2648746500F40667 /* MapView.swift */; };
 		75024B97264AA3880042FC11 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B12C22264898E0004A6A1A /* ToolbarView.swift */; };
+		75054017264E648700543114 /* testVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 75054016264E648700543114 /* testVideo2.mp4 */; };
+		75054018264E648700543114 /* testVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 75054016264E648700543114 /* testVideo2.mp4 */; };
+		75054019264E648700543114 /* testVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 75054016264E648700543114 /* testVideo2.mp4 */; };
 		750BBD73264BF148009CB1C9 /* SwiftUIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BBD72264BF148009CB1C9 /* SwiftUIComponents.swift */; };
 		750BBD74264BF148009CB1C9 /* SwiftUIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BBD72264BF148009CB1C9 /* SwiftUIComponents.swift */; };
 		750BBD76264BF2B5009CB1C9 /* NewComponentsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BBD75264BF2B5009CB1C9 /* NewComponentsSection.swift */; };
@@ -182,7 +182,6 @@
 		01A6B73B264C78E500934530 /* OSPaddingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSPaddingModifier.swift; sourceTree = "<group>"; };
 		01A6B744264CA4D700934530 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
 		01A6B749264CA5ED00934530 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
-		01A6B74E264CA71C00934530 /* testVideo2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = testVideo2.mp4; path = ../../../../../Downloads/testVideo2.mp4; sourceTree = "<group>"; };
 		01A6B753264CAB2D00934530 /* UpdatedComponentsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatedComponentsSection.swift; sourceTree = "<group>"; };
 		01B12BC2264877C4004A6A1A /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		01B12BC4264877CF004A6A1A /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
@@ -212,6 +211,7 @@
 		01B12C1E264896B4004A6A1A /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		01B12C20264897C4004A6A1A /* SFSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsView.swift; sourceTree = "<group>"; };
 		01B12C22264898E0004A6A1A /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		75054016264E648700543114 /* testVideo2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo2.mp4; sourceTree = "<group>"; };
 		750BBD72264BF148009CB1C9 /* SwiftUIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIComponents.swift; sourceTree = "<group>"; };
 		750BBD75264BF2B5009CB1C9 /* NewComponentsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewComponentsSection.swift; sourceTree = "<group>"; };
 		7582FFBA26491749002C7DC4 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -248,20 +248,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0178C58326486A3500F40667 /* NewComponents */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NewComponents;
-			sourceTree = "<group>";
-		};
-		0178C58F264875F700F40667 /* NewViewModifiers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NewViewModifiers;
-			sourceTree = "<group>";
-		};
 		019175FD264D54E5007CAA5A /* Accessibilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,10 +291,6 @@
 				7582FFC826493259002C7DC4 /* Sections */,
 				01A33E71264555BF002F689D /* SwiftUIComponentsApp.swift */,
 				750BBD72264BF148009CB1C9 /* SwiftUIComponents.swift */,
-				750BBD6E264BEF1E009CB1C9 /* ------------- */,
-				7582FFE026495B48002C7DC4 /* Accesibilities */,
-				0178C58326486A3500F40667 /* NewComponents */,
-				0178C58F264875F700F40667 /* NewViewModifiers */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -422,13 +404,6 @@
 			path = "New Components";
 			sourceTree = "<group>";
 		};
-		750BBD6E264BEF1E009CB1C9 /* ------------- */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "-------------";
-			sourceTree = "<group>";
-		};
 		750BBD78264BF51E009CB1C9 /* Extensions And Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,18 +437,11 @@
 			path = Sections;
 			sourceTree = "<group>";
 		};
-		7582FFE026495B48002C7DC4 /* Accesibilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Accesibilities;
-			sourceTree = "<group>";
-		};
 		7582FFE726495F24002C7DC4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				01A6B744264CA4D700934530 /* testVideo.mp4 */,
-				01A6B74E264CA71C00934530 /* testVideo2.mp4 */,
+				75054016264E648700543114 /* testVideo2.mp4 */,
 				750BBD6C264BEE4E009CB1C9 /* Fonts */,
 				01A33E73264555C0002F689D /* Assets.xcassets */,
 			);
@@ -623,7 +591,7 @@
 			files = (
 				01A33E88264555C0002F689D /* Assets.xcassets in Resources */,
 				7582FFEC26495FC9002C7DC4 /* Lato-Thin.ttf in Resources */,
-				01A6B74F264CA71C00934530 /* testVideo2.mp4 in Resources */,
+				75054017264E648700543114 /* testVideo2.mp4 in Resources */,
 				01A6B745264CA4D700934530 /* testVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,7 +602,7 @@
 			files = (
 				01A33E89264555C0002F689D /* Assets.xcassets in Resources */,
 				7582FFED26495FC9002C7DC4 /* Lato-Thin.ttf in Resources */,
-				01A6B750264CA71C00934530 /* testVideo2.mp4 in Resources */,
+				75054018264E648700543114 /* testVideo2.mp4 in Resources */,
 				01A6B746264CA4D700934530 /* testVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,7 +628,7 @@
 			files = (
 				01B12C0D26489348004A6A1A /* Preview Assets.xcassets in Resources */,
 				01A6B742264C861B00934530 /* Assets.xcassets in Resources */,
-				01A6B751264CA71C00934530 /* testVideo2.mp4 in Resources */,
+				75054019264E648700543114 /* testVideo2.mp4 in Resources */,
 				01B12C0A26489348004A6A1A /* Assets.xcassets in Resources */,
 				01A6B747264CA4D700934530 /* testVideo.mp4 in Resources */,
 			);
