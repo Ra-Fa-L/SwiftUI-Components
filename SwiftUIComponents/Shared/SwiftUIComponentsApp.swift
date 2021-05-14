@@ -11,7 +11,10 @@ import SwiftUI
 struct SwiftUIComponentsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                SwiftUIComponents()
+            }
+            .navigationTitle("Swift UI 2.0 Components")
         }
     }
 }
