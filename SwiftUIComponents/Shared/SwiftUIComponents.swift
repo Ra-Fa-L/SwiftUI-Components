@@ -9,20 +9,31 @@ import SwiftUI
 
 struct SwiftUIComponents: View {
     var body: some View {
-            List {
-                NewViewsSection()
+        Group {
+            #if os(watchOS)
+            AllSectionsList()
+                .listStyle(EllipticalListStyle())
+            #else
+            AllSectionsList()
+                .navTitle("Swift UI 2.0 Components")
+//                .listStyle(PlainListStyle())
+//                .listStyle(GroupedListStyle())
+//                .listStyle(InsetGroupedListStyle())
+                .listStyle(SidebarListStyle())
+            #endif
+        }
+        .navTitle("Swift UI 2.0 Components")
+    }
+}
 
-//                NewModifiersSectionView()
-//
-//                UpdatedViewsSectionView()
-//
-//                PropertyWrappersSectionView()
-            }
-            .navTitle("Swift UI 2.02 Components")
-//            .listStyle(PlainListStyle())
-//            .listStyle(GroupedListStyle())
-//            .listStyle(InsetGroupedListStyle())
-            .listStyle(SidebarListStyle())
+struct AllSectionsList: View {
+    var body: some View {
+        List {
+            NewComponentsSection()
+            UpdatedComponentsSection()
+            NewViewModifiersSection()
+            AccessibilitiesSection()
+        }
     }
 }
 

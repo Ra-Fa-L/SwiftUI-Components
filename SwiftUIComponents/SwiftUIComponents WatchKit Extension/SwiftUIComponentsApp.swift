@@ -12,10 +12,9 @@ struct SwiftUIComponentsApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                SwiftUIComponents()
             }
         }
-
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")
     }
 }

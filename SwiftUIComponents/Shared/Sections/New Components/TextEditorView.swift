@@ -5,6 +5,8 @@
 //  Created by Rafal Padberg on 09/05/2021.
 //
 
+// Available: iOS, macOS
+
 import SwiftUI
 
 struct TextEditorView: View {
@@ -29,6 +31,7 @@ struct TextEditorView: View {
         .onTapGesture {
             self.hideKeyboard()
         }
+        .padding()
         .navTitle("TextEditor")
     }
     
